@@ -1,0 +1,40 @@
+.download-to-csv {
+  &__content {
+    .row {
+      h2 {
+        text-align: center;
+      }
+
+      .action-box {
+        display: flex;
+        gap: 2rem;
+        margin: 3rem 0;
+        button {
+          height: 60px;
+          max-width: 200px;
+        }
+      }
+    }
+    .middle {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 1rem 0;
+      .left {
+        min-width: 180px;
+      }
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      .col {
+        label {
+          span {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

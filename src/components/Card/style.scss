@@ -1,0 +1,14 @@
+@use '../../styles/colors' as *;
+.card-container {
+  box-sizing: border-box;
+  margin: 0px 0px 16px;
+  min-width: 0px;
+  display: flex;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: $bg-white;
+  flex-direction: column;
+
+  .card-body {
+  }
+}

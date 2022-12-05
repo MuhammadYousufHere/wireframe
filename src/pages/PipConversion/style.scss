@@ -1,0 +1,62 @@
+.pipconversion {
+  &__content {
+    .row {
+      h2 {
+        text-align: center;
+      }
+      .action-btn {
+        display: flex;
+        gap: 1rem;
+        .left {
+          min-width: 180px;
+        }
+        .right {
+          display: flex;
+          gap: 0.5rem;
+          button {
+            min-width: 130px;
+          }
+        }
+      }
+
+      .action-box {
+        display: flex;
+        gap: 2rem;
+        margin: 3rem 0;
+        button {
+          max-width: 200px;
+        }
+      }
+    }
+    .middle {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 1rem 0;
+      .left {
+        min-width: 180px;
+      }
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      .col {
+        label {
+          span {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .pipconversion__content .middle .left {
+    min-width: 107px;
+  }
+  .pipconversion__content .row .action-btn .left {
+    min-width: 107px;
+  }
+}

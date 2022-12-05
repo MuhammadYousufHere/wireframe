@@ -1,0 +1,13 @@
+.card-container {
+  .card-body {
+    padding: 0 1.1rem;
+    .top {
+      display: flex;
+      justify-content: space-between;
+    }
+    .center {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+}
