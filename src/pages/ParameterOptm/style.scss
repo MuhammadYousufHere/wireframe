@@ -62,6 +62,10 @@
         min-width: 100px !important;
       }
     }
+    button {
+      background-color: transparent;
+      border: none;
+    }
   }
   .action-box {
     display: flex;

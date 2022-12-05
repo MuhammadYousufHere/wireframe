@@ -1,4 +1,4 @@
-@use '../../styles/colors' as *;
+@use "../../styles/colors" as *;
 .btn {
   margin: 0px;
   appearance: none;
@@ -55,7 +55,13 @@
     color: rgb(224, 224, 222);
   }
 }
-
+input::-webkit-file-upload-button {
+  display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
 .btn-pill {
   @extend .btn-outlined;
   border-radius: 100vmax;
