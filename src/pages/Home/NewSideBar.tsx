@@ -6,18 +6,23 @@ import Logo from "../../components/Navigation/Logo";
 import { routes } from "./data";
 import "./sidebar.scss";
 import { FaTimes } from "react-icons/fa";
+import { useWindowSize } from "../../hooks";
 const NewSideBar = ({ onClick }: { onClick?: () => void }) => {
   const navigation = useNavigate();
   const location = useLocation();
+  const { width } = useWindowSize();
 
+  console.log(width);
   return (
     <div className="newsidebar">
       {/* Sidebar Overlay */}
-      <div className="bars">
-        <button onClick={onClick}>
-          <FaTimes />
-        </button>
-      </div>
+      {width <= 780 && (
+        <div className="bars">
+          <button onClick={onClick}>
+            <FaTimes />
+          </button>
+        </div>
+      )}
 
       <div className="logo">
         <Logo />

@@ -4,16 +4,27 @@ import { Navbar } from "../../components/Navigation";
 import Sidebar from "./Sidebar";
 import "./style.scss";
 const AppLayout = () => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
+
+  const body = window.document.body;
+
+  const sidebarHandler = () => {
+    setShow(!show);
+    if (!show) {
+      body.style.overflow = "hidden";
+    } else {
+      body.style.overflow = "auto";
+    }
+  };
   return (
     <>
       <Navbar onClick={() => setShow(!show)} />
-      <div className="home" style={{ paddingLeft: !show ? "0px" : "370px" }}>
+      <div className="home" style={{}}>
         <Sidebar
           style={{
             transform: show ? "translate(0%, 0)" : "translate(-100%,0)",
           }}
-          onClick={() => setShow(!show)}
+          onClick={sidebarHandler}
         />
         <Outlet />
       </div>
