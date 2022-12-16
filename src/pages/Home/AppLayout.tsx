@@ -22,7 +22,7 @@ const AppLayout = () => {
       <div className="home" style={{}}>
         <Sidebar
           style={{
-            transform: show ? "translate(0%, 0)" : "translate(-100%,0)",
+            transform: !show ? "translate(0%, 0)" : "translate(-100%,0)",
           }}
           onClick={sidebarHandler}
         />
