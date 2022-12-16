@@ -7,14 +7,14 @@
   background-color: #fff;
   border-right-style: solid;
   border-right-width: 1px;
-
+  z-index: 3213;
   &__logo {
     display: grid;
     place-items: center;
     height: 120px;
     font-size: 1.5rem;
     font-weight: 700;
-    font-family: 'Mochiy Pop P one', sans-serif;
+    font-family: "Mochiy Pop P one", sans-serif;
   }
 
   &__menu {
@@ -64,10 +64,32 @@
     place-items: center;
     height: 120px;
   }
+  .bars {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    button {
+      outline: none;
+      border: none;
+      background-color: transparent;
+      margin: 2rem 1rem 0 0;
+      svg {
+        font-size: 1rem;
+        color: #555555;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
   .sidebar {
     width: 230px;
+  }
+}
+@media (max-width: 480px) {
+  .newsidebar {
+    .logo {
+      height: 50px;
+    }
   }
 }

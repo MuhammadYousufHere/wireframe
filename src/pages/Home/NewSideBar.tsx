@@ -1,19 +1,25 @@
-import { Navigation } from 'react-minimal-side-navigation';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { Navigation } from "react-minimal-side-navigation";
+import { useNavigate, useLocation } from "react-router-dom";
 
-import 'react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css';
-import Logo from '../../components/Navigation/Logo';
-import { routes } from './data';
-import './sidebar.scss';
-const NewSideBar = () => {
+import "react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css";
+import Logo from "../../components/Navigation/Logo";
+import { routes } from "./data";
+import "./sidebar.scss";
+import { FaTimes } from "react-icons/fa";
+const NewSideBar = ({ onClick }: { onClick?: () => void }) => {
   const navigation = useNavigate();
   const location = useLocation();
 
   return (
-    <div className='newsidebar'>
+    <div className="newsidebar">
       {/* Sidebar Overlay */}
+      <div className="bars">
+        <button onClick={onClick}>
+          <FaTimes />
+        </button>
+      </div>
 
-      <div className='logo'>
+      <div className="logo">
         <Logo />
       </div>
 

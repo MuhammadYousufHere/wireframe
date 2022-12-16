@@ -41,7 +41,7 @@ $desktop: 1380px;
   }
   &__switch:checked + &__options-filter &__select {
     transform: scaleY(1);
-    z-index: 22;
+    z-index: 2;
     border-radius: 12px;
   }
 
@@ -76,7 +76,7 @@ $desktop: 1380px;
       position: absolute;
       top: 45%;
       right: 20px;
-      content: '';
+      content: "";
       width: 10px;
       height: 10px;
       border-right: 2px solid #595959;

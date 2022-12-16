@@ -1,7 +1,8 @@
 // import { useEffect, useRef, useState } from 'react';
 // import { Link, useLocation } from 'react-router-dom';
-import NewSideBar from './NewSideBar';
-import './sidebar.scss';
+import React, { CSSProperties } from "react";
+import NewSideBar from "./NewSideBar";
+import "./sidebar.scss";
 
 // const sidebarNavItems = [
 //   {
@@ -59,7 +60,13 @@ import './sidebar.scss';
 //   },
 // ];
 
-const Sidebar = () => {
+const Sidebar = ({
+  style,
+  onClick,
+}: {
+  style?: CSSProperties;
+  onClick: () => void;
+}) => {
   // const [activeIndex, setActiveIndex] = useState(0);
   // const [stepHeight, setStepHeight] = useState(0);
   // const sidebarRef = useRef<HTMLDivElement>(null);
@@ -88,7 +95,7 @@ const Sidebar = () => {
   // }, [location]);
 
   return (
-    <div className='sidebar'>
+    <div className="sidebar" style={style}>
       {/* <div className='sidebar__logo'></div>
       <div
         ref={sidebarRef}
@@ -126,7 +133,7 @@ const Sidebar = () => {
           </Link>
         ))}
       </div> */}
-      <NewSideBar />
+      <NewSideBar onClick={onClick} />
     </div>
   );
 };
