@@ -16,7 +16,7 @@ const NewSideBar = ({ onClick }: { onClick?: () => void }) => {
   return (
     <div className="newsidebar">
       {/* Sidebar Overlay */}
-      {width <= 780 && (
+      {width <= 480 && (
         <div className="bars">
           <button onClick={onClick}>
             <FaTimes />
