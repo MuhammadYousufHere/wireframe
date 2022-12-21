@@ -11,6 +11,7 @@ import { Popup } from "../../components/Popup";
 import Wrapper from "../../components/Wrapper/Wrapper";
 import Chips from "../../components/Form/Chips";
 import { FaPlus } from "react-icons/fa";
+import { PipIcon } from "../../components/icons";
 
 const ParameterOpt = memo(() => {
   const initialValues = [160, 180, 200];
@@ -61,13 +62,13 @@ const ParameterOpt = memo(() => {
             <Input
               label="Slipage"
               type="text"
-              Icon={<h6>Pips</h6>}
+              Icon={<PipIcon />}
               placeholder="-5"
             />
             <Input
               label="Spread"
               type="text"
-              Icon={<h6>Pips</h6>}
+              Icon={<PipIcon />}
               placeholder="10"
             />
             <Input

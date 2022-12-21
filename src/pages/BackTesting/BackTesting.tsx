@@ -7,7 +7,7 @@ import { Button } from "../../components/Button";
 
 import "./style.scss";
 import Wrapper from "../../components/Wrapper/Wrapper";
-import PipIcon from "./PipIcon";
+import PipIcon from "../../components/icons/PipIcon";
 const BackTesting = () => {
   return (
     <Wrapper>
